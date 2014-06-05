@@ -12,6 +12,7 @@
 		DD5971551940DFFB005C4BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5971531940DFFB005C4BED /* Main.storyboard */; };
 		DD5971571940DFFB005C4BED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5971561940DFFB005C4BED /* Images.xcassets */; };
 		DD5971631940DFFB005C4BED /* SendToInstapaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5971621940DFFB005C4BED /* SendToInstapaperTests.swift */; };
+		DD59716D1940E709005C4BED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59716C1940E709005C4BED /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		DD59715C1940DFFB005C4BED /* SendToInstapaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendToInstapaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5971611940DFFB005C4BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD5971621940DFFB005C4BED /* SendToInstapaperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendToInstapaperTests.swift; sourceTree = "<group>"; };
+		DD59716C1940E709005C4BED /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				DD59714F1940DFFB005C4BED /* AppDelegate.swift */,
 				DD5971511940DFFB005C4BED /* ViewController.swift */,
+				DD59716C1940E709005C4BED /* LoginViewController.swift */,
 				DD5971531940DFFB005C4BED /* Main.storyboard */,
 				DD5971561940DFFB005C4BED /* Images.xcassets */,
 				DD59714D1940DFFA005C4BED /* Supporting Files */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD59716D1940E709005C4BED /* LoginViewController.swift in Sources */,
 				DD5971521940DFFB005C4BED /* ViewController.swift in Sources */,
 				DD5971501940DFFB005C4BED /* AppDelegate.swift in Sources */,
 			);
