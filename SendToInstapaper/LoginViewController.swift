@@ -51,7 +51,9 @@ class LoginViewController: UIViewController {
 		var username = String(usernameField.text)
 		var password = String(passwordField.text)
 		
-		NSLog("loginSubmitted")
+		// gotta remember the user credentials to use the simple api
+		// might not be the securest solution.
+		communicator.storeLogin(username: username, password: password)
 
 		if(countElements(username) == 0 || countElements(password) == 0) {
 			// TODO: display a simple error
@@ -65,20 +67,16 @@ class LoginViewController: UIViewController {
 				hud.mode = MBProgressHUDModeText
 				hud.labelText = "Success!"
 				hud.show(true)
-				
-				// gotta remember the user credentials to use the simple api
-				// might not be the securest solution.
-				communicator.storeLogin(username: username, password: password)
-				
+
 				// done for now.
-				self.dismissModalViewControllerAnimated(true)
+				self.navigationController.popViewControllerAnimated(true)
 			}
 			
 			func failedLogin() {
 				NSLog("failed login")
 				hud.hide(true)
 				hud.mode = MBProgressHUDModeText
-				hud.labelText = "Invalid login."
+				hud.labelText = "Invalid login"
 				hud.show(true)
 			}
 			

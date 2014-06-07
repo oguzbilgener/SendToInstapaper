@@ -34,6 +34,8 @@ class APICommunicator {
 	}
 	
 	func storeLogin(#username: String, password: String) {
+		self.username = username
+		self.password = password
 		var defaults = NSUserDefaults.standardUserDefaults()
 		defaults.setObject(username, forKey: "username")
 		defaults.setObject(password, forKey: "password")
@@ -43,6 +45,7 @@ class APICommunicator {
 	
 	func login(#success: (Void)->Void, failure: (Void)->Void) {
 		var params = ["username": username, "password": password]
+		NSLog(username+" "+password)
 		manager.responseSerializer = AFHTTPResponseSerializer()
 		manager.responseSerializer.acceptableContentTypes = NSSet(array: ["text/plain"]);
 		
