@@ -42,19 +42,16 @@ class APICommunicator {
 	}
 	
 	func login(#success: (Void)->Void, failure: (Void)->Void) {
-		if(!loggedIn) {
-			failure()
-		}
-		var params = ["username": password, "password": password]
+		var params = ["username": username, "password": password]
 		manager.responseSerializer = AFHTTPResponseSerializer()
 		manager.responseSerializer.acceptableContentTypes = NSSet(array: ["text/plain"]);
 		
 		manager.POST(loginURLString, parameters: params,
 			success: {
-				(operation: AFHTTPRequestOperation!, responseObject: AnyObject!)->(Void) in
+				(operation: AFHTTPRequestOperation!, responseObject: AnyObject!)->(Void) in NSLog("s")
 				success()
 			}, failure: {
-				(operation: AFHTTPRequestOperation!, error:NSError!) -> Void in
+				(operation: AFHTTPRequestOperation!, error:NSError!) -> Void in NSLog("f "+error.localizedDescription+" "+String(operation.response.statusCode))
 				failure()
 		})
 	}
@@ -62,8 +59,9 @@ class APICommunicator {
 	func save(#url:String!, success: (Void)->Void, failure: (Void)->Void) {
 		if(!loggedIn) {
 			failure()
+			return
 		}
-		var params = ["username": password, "password": password, "url": url]
+		var params = ["username": username, "password": password, "url": url]
 		manager.responseSerializer = AFHTTPResponseSerializer()
 		manager.responseSerializer.acceptableContentTypes = NSSet(array: ["text/plain"]);
 		

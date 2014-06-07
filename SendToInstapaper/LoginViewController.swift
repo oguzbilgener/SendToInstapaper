@@ -50,6 +50,8 @@ class LoginViewController: UIViewController {
 	@IBAction func loginSubmitted(sender : AnyObject) {
 		var username = String(usernameField.text)
 		var password = String(passwordField.text)
+		
+		NSLog("loginSubmitted")
 
 		if(countElements(username) == 0 || countElements(password) == 0) {
 			// TODO: display a simple error
@@ -58,6 +60,7 @@ class LoginViewController: UIViewController {
 		else {
 			var hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
 			func successfulLogin() {
+				NSLog("successful login")
 				hud.hide(true)
 				hud.mode = MBProgressHUDModeText
 				hud.labelText = "Success!"
@@ -72,6 +75,7 @@ class LoginViewController: UIViewController {
 			}
 			
 			func failedLogin() {
+				NSLog("failed login")
 				hud.hide(true)
 				hud.mode = MBProgressHUDModeText
 				hud.labelText = "Invalid login."
