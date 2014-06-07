@@ -16,6 +16,7 @@ class APICommunicator {
 	var manager:AFHTTPRequestOperationManager
 	
 	let loginURLString = "https://www.instapaper.com/api/authenticate"
+	let saveURLString = "https://www.instapaper.com/api/add"
 	
 	init() {
 		manager = AFHTTPRequestOperationManager()
@@ -42,7 +43,7 @@ class APICommunicator {
 	
 	func login(#success: (Void)->Void, failure: (Void)->Void) {
 		if(!loggedIn) {
-			return
+			failure()
 		}
 		var params = ["username": password, "password": password]
 		manager.responseSerializer = AFHTTPResponseSerializer()
@@ -51,9 +52,27 @@ class APICommunicator {
 		manager.POST(loginURLString, parameters: params,
 			success: {
 				(operation: AFHTTPRequestOperation!, responseObject: AnyObject!)->(Void) in
-					success()
+				success()
 			}, failure: {
-			(operation: AFHTTPRequestOperation!, error:NSError!) -> Void in
+				(operation: AFHTTPRequestOperation!, error:NSError!) -> Void in
+				failure()
+		})
+	}
+	
+	func save(#url:String!, success: (Void)->Void, failure: (Void)->Void) {
+		if(!loggedIn) {
+			failure()
+		}
+		var params = ["username": password, "password": password, "url": url]
+		manager.responseSerializer = AFHTTPResponseSerializer()
+		manager.responseSerializer.acceptableContentTypes = NSSet(array: ["text/plain"]);
+		
+		manager.POST(loginURLString, parameters: params,
+			success: {
+				(operation: AFHTTPRequestOperation!, responseObject: AnyObject!)->(Void) in
+				success()
+			}, failure: {
+				(operation: AFHTTPRequestOperation!, error:NSError!) -> Void in
 				failure()
 		})
 	}

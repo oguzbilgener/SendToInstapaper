@@ -23,9 +23,9 @@
 		DDD9979019435D860017FF7B /* APICommunicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9978519435D860017FF7B /* APICommunicator.framework */; };
 		DDD9979719435D860017FF7B /* APICommunicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9979619435D860017FF7B /* APICommunicatorTests.swift */; };
 		DDD9979A19435D860017FF7B /* APICommunicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9978519435D860017FF7B /* APICommunicator.framework */; };
-		DDD9979B19435D860017FF7B /* APICommunicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9978519435D860017FF7B /* APICommunicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DDD997A619435DAF0017FF7B /* APICommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD997A519435DAF0017FF7B /* APICommunicator.swift */; };
 		DDD997A7194365410017FF7B /* APICommunicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9978519435D860017FF7B /* APICommunicator.framework */; };
+		DDE497C019437F1500B81557 /* APICommunicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9978519435D860017FF7B /* APICommunicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DDD9979B19435D860017FF7B /* APICommunicator.framework in Embed Frameworks */,
+				DDE497C019437F1500B81557 /* APICommunicator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +128,7 @@
 		DDD9979519435D860017FF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDD9979619435D860017FF7B /* APICommunicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICommunicatorTests.swift; sourceTree = "<group>"; };
 		DDD997A519435DAF0017FF7B /* APICommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommunicator.swift; sourceTree = "<group>"; };
+		DDE497BF19437E1900B81557 /* APICommunicator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APICommunicator-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +275,7 @@
 		DDD9978719435D860017FF7B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DDE497BF19437E1900B81557 /* APICommunicator-Bridging-Header.h */,
 				DDD9978819435D860017FF7B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -885,6 +887,7 @@
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "APICommunicator/APICommunicator-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -908,6 +911,7 @@
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "APICommunicator/APICommunicator-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

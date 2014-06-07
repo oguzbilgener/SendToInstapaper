@@ -11,7 +11,7 @@ import APICommunicator
 
 class LoginViewController: UIViewController {
 
-	@IBOutlet var emailField : UITextField
+	@IBOutlet var usernameField : UITextField
 	@IBOutlet var passwordField : UITextField
 	
 	var communicator: APICommunicator
@@ -48,12 +48,12 @@ class LoginViewController: UIViewController {
 	}
 	
 	@IBAction func loginSubmitted(sender : AnyObject) {
-		var emailAddress = String(emailField.text)
+		var username = String(usernameField.text)
 		var password = String(passwordField.text)
 
-		if(countElements(emailAddress) == 0 || countElements(password) == 0) {
+		if(countElements(username) == 0 || countElements(password) == 0) {
 			// TODO: display a simple error
-			NSLog("empty email address or password")
+			NSLog("empty username or password")
 		}
 		else {
 			var hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
 				
 				// gotta remember the user credentials to use the simple api
 				// might not be the securest solution.
-				communicator.storeLogin(username: emailAddress, password: password)
+				communicator.storeLogin(username: username, password: password)
 				
 				// done for now.
 				self.dismissModalViewControllerAnimated(true)
