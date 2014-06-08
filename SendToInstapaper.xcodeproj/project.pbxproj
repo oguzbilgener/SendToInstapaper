@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1203843C2C2D472FA85BEB00 /* libPods-SendToInstapaper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51129C57BA6240C18D302F00 /* libPods-SendToInstapaper.a */; };
+		28C5747D572A4E1C868B256E /* libPods-APICommunicator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EC041867E6410CA724BF36 /* libPods-APICommunicator.a */; };
 		97F9623173E74AFFA6885D6B /* libPods-ShareExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4B82885D1749549ED61B9A /* libPods-ShareExtension.a */; };
-		D0E6F2CF7D5C4043869736F0 /* libPods-APICommunicator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EC041867E6410CA724BF36 /* libPods-APICommunicator.a */; };
-		DC5CCB536AF7416282C7E816 /* libPods-SendToInstapaper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51129C57BA6240C18D302F00 /* libPods-SendToInstapaper.a */; };
 		DD5971501940DFFB005C4BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59714F1940DFFB005C4BED /* AppDelegate.swift */; };
 		DD5971521940DFFB005C4BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5971511940DFFB005C4BED /* ViewController.swift */; };
 		DD5971551940DFFB005C4BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5971531940DFFB005C4BED /* Main.storyboard */; };
@@ -18,14 +18,16 @@
 		DD59716D1940E709005C4BED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59716C1940E709005C4BED /* LoginViewController.swift */; };
 		DD635C7D19432EC200283B60 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD635C7C19432EC200283B60 /* MainInterface.storyboard */; };
 		DD635C8019432EC200283B60 /* com.oguzdev.SendToInstapaper.ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD635C7619432EC200283B60 /* com.oguzdev.SendToInstapaper.ShareExtension.appex */; };
+		DD8DE8541944FE6600D8BFAC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DE8531944FE6600D8BFAC /* MapKit.framework */; };
+		DD8DE8551944FE6800D8BFAC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DE8531944FE6600D8BFAC /* MapKit.framework */; };
+		DD8DE860194515FF00D8BFAC /* APICommunicator.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8DE85F194515FF00D8BFAC /* APICommunicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD8DE8661945160000D8BFAC /* APICommunicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DE85B194515FF00D8BFAC /* APICommunicator.framework */; };
+		DD8DE86D1945160000D8BFAC /* APICommunicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DE86C1945160000D8BFAC /* APICommunicatorTests.swift */; };
+		DD8DE8701945160000D8BFAC /* APICommunicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DE85B194515FF00D8BFAC /* APICommunicator.framework */; };
+		DD8DE8711945160000D8BFAC /* APICommunicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DE85B194515FF00D8BFAC /* APICommunicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DD8DE8851945161900D8BFAC /* APICommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8DE8841945161900D8BFAC /* APICommunicator.swift */; };
+		DD8DE887194518AC00D8BFAC /* APICommunicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DE85B194515FF00D8BFAC /* APICommunicator.framework */; };
 		DDD9977B19432FF70017FF7B /* SendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9977A19432FF70017FF7B /* SendingViewController.swift */; };
-		DDD9978A19435D860017FF7B /* APICommunicator.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD9978919435D860017FF7B /* APICommunicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDD9979019435D860017FF7B /* APICommunicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9978519435D860017FF7B /* APICommunicator.framework */; };
-		DDD9979719435D860017FF7B /* APICommunicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9979619435D860017FF7B /* APICommunicatorTests.swift */; };
-		DDD9979A19435D860017FF7B /* APICommunicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9978519435D860017FF7B /* APICommunicator.framework */; };
-		DDD997A619435DAF0017FF7B /* APICommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD997A519435DAF0017FF7B /* APICommunicator.swift */; };
-		DDD997A7194365410017FF7B /* APICommunicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9978519435D860017FF7B /* APICommunicator.framework */; };
-		DDE497C019437F1500B81557 /* APICommunicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9978519435D860017FF7B /* APICommunicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,25 +52,74 @@
 			remoteGlobalIDString = DD635C7519432EC200283B60;
 			remoteInfo = ShareExtension;
 		};
-		DDD9979119435D860017FF7B /* PBXContainerItemProxy */ = {
+		DD8DE84F1944F8BD00D8BFAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDD9978419435D860017FF7B;
+			remoteGlobalIDString = DD5971491940DFFA005C4BED;
+			remoteInfo = SendToInstapaper;
+		};
+		DD8DE8511944F8BD00D8BFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD5971491940DFFA005C4BED;
+			remoteInfo = SendToInstapaper;
+		};
+		DD8DE8671945160000D8BFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD8DE85A194515FF00D8BFAC;
 			remoteInfo = APICommunicator;
 		};
-		DDD9979819435D860017FF7B /* PBXContainerItemProxy */ = {
+		DD8DE86E1945160000D8BFAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDD9978419435D860017FF7B;
+			remoteGlobalIDString = DD8DE85A194515FF00D8BFAC;
 			remoteInfo = APICommunicator;
 		};
-		DDD9979C19435D860017FF7B /* PBXContainerItemProxy */ = {
+		DD8DE8721945160000D8BFAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDD9978419435D860017FF7B;
+			remoteGlobalIDString = DD8DE85A194515FF00D8BFAC;
+			remoteInfo = APICommunicator;
+		};
+		DD8DE87A1945160100D8BFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD8DE85A194515FF00D8BFAC;
+			remoteInfo = APICommunicator;
+		};
+		DD8DE87C1945160100D8BFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD8DE85A194515FF00D8BFAC;
+			remoteInfo = APICommunicator;
+		};
+		DD8DE87E1945160200D8BFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD8DE85A194515FF00D8BFAC;
+			remoteInfo = APICommunicator;
+		};
+		DD8DE8801945160200D8BFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD8DE85A194515FF00D8BFAC;
+			remoteInfo = APICommunicator;
+		};
+		DD8DE8821945160400D8BFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5971421940DFFA005C4BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD8DE85A194515FF00D8BFAC;
 			remoteInfo = APICommunicator;
 		};
 /* End PBXContainerItemProxy section */
@@ -80,7 +131,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DDE497C019437F1500B81557 /* APICommunicator.framework in Embed Frameworks */,
+				DD8DE8711945160000D8BFAC /* APICommunicator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,10 +152,10 @@
 /* Begin PBXFileReference section */
 		4A4B82885D1749549ED61B9A /* libPods-ShareExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShareExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51129C57BA6240C18D302F00 /* libPods-SendToInstapaper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SendToInstapaper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9FC865F5F24373B1238B89 /* Pods-APICommunicator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APICommunicator.xcconfig"; path = "Pods/Pods-APICommunicator.xcconfig"; sourceTree = "<group>"; };
 		6D21EEE37474428587F46424 /* Pods-SendToInstapaper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToInstapaper.xcconfig"; path = "Pods/Pods-SendToInstapaper.xcconfig"; sourceTree = "<group>"; };
 		720C0B14A0E1473BBDAC476A /* Pods-ShareExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.xcconfig"; path = "Pods/Pods-ShareExtension.xcconfig"; sourceTree = "<group>"; };
 		74EC041867E6410CA724BF36 /* libPods-APICommunicator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APICommunicator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CE955994F0B4EE1B86609C4 /* Pods-APICommunicator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APICommunicator.xcconfig"; path = "Pods/Pods-APICommunicator.xcconfig"; sourceTree = "<group>"; };
 		DD59714A1940DFFA005C4BED /* SendToInstapaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendToInstapaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD59714E1940DFFB005C4BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD59714F1940DFFB005C4BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,17 +169,20 @@
 		DD635C7619432EC200283B60 /* com.oguzdev.SendToInstapaper.ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.oguzdev.SendToInstapaper.ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD635C7919432EC200283B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD635C7C19432EC200283B60 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		DD8DE84D1944D6CF00D8BFAC /* com.oguzdev.SendToInstapaper.ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = com.oguzdev.SendToInstapaper.ShareExtension.entitlements; sourceTree = "<group>"; };
+		DD8DE84E1944DD5700D8BFAC /* SendToInstapaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SendToInstapaper.entitlements; sourceTree = "<group>"; };
+		DD8DE8531944FE6600D8BFAC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DD8DE85B194515FF00D8BFAC /* APICommunicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APICommunicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8DE85E194515FF00D8BFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8DE85F194515FF00D8BFAC /* APICommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APICommunicator.h; sourceTree = "<group>"; };
+		DD8DE8651945160000D8BFAC /* APICommunicatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APICommunicatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8DE86B1945160000D8BFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8DE86C1945160000D8BFAC /* APICommunicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICommunicatorTests.swift; sourceTree = "<group>"; };
+		DD8DE8841945161900D8BFAC /* APICommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommunicator.swift; sourceTree = "<group>"; };
+		DD8DE8861945183800D8BFAC /* APICommunicator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APICommunicator-Bridging-Header.h"; sourceTree = "<group>"; };
 		DDD9977A19432FF70017FF7B /* SendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingViewController.swift; sourceTree = "<group>"; };
 		DDD9977C194337590017FF7B /* ShareExtension-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShareExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		DDD9977D1943377F0017FF7B /* SendToInstapaper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SendToInstapaper-Bridging-Header.h"; sourceTree = "<group>"; };
-		DDD9978519435D860017FF7B /* APICommunicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APICommunicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDD9978819435D860017FF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDD9978919435D860017FF7B /* APICommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APICommunicator.h; sourceTree = "<group>"; };
-		DDD9978F19435D860017FF7B /* APICommunicatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APICommunicatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDD9979519435D860017FF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDD9979619435D860017FF7B /* APICommunicatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICommunicatorTests.swift; sourceTree = "<group>"; };
-		DDD997A519435DAF0017FF7B /* APICommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommunicator.swift; sourceTree = "<group>"; };
-		DDE497BF19437E1900B81557 /* APICommunicator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APICommunicator-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +190,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD9979A19435D860017FF7B /* APICommunicator.framework in Frameworks */,
-				DC5CCB536AF7416282C7E816 /* libPods-SendToInstapaper.a in Frameworks */,
+				DD8DE8541944FE6600D8BFAC /* MapKit.framework in Frameworks */,
+				1203843C2C2D472FA85BEB00 /* libPods-SendToInstapaper.a in Frameworks */,
+				DD8DE8701945160000D8BFAC /* APICommunicator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,24 +207,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD997A7194365410017FF7B /* APICommunicator.framework in Frameworks */,
+				DD8DE887194518AC00D8BFAC /* APICommunicator.framework in Frameworks */,
+				DD8DE8551944FE6800D8BFAC /* MapKit.framework in Frameworks */,
 				97F9623173E74AFFA6885D6B /* libPods-ShareExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDD9978119435D860017FF7B /* Frameworks */ = {
+		DD8DE857194515FF00D8BFAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0E6F2CF7D5C4043869736F0 /* libPods-APICommunicator.a in Frameworks */,
+				28C5747D572A4E1C868B256E /* libPods-APICommunicator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDD9978C19435D860017FF7B /* Frameworks */ = {
+		DD8DE8621945160000D8BFAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD9979019435D860017FF7B /* APICommunicator.framework in Frameworks */,
+				DD8DE8661945160000D8BFAC /* APICommunicator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,13 +238,13 @@
 				DD59714C1940DFFA005C4BED /* SendToInstapaper */,
 				DD59715F1940DFFB005C4BED /* SendToInstapaperTests */,
 				DD635C7719432EC200283B60 /* ShareExtension */,
-				DDD9978619435D860017FF7B /* APICommunicator */,
-				DDD9979319435D860017FF7B /* APICommunicatorTests */,
+				DD8DE85C194515FF00D8BFAC /* APICommunicator */,
+				DD8DE8691945160000D8BFAC /* APICommunicatorTests */,
 				DD59714B1940DFFA005C4BED /* Products */,
 				6D21EEE37474428587F46424 /* Pods-SendToInstapaper.xcconfig */,
 				F02458D5079842F7B54EAAAF /* Frameworks */,
 				720C0B14A0E1473BBDAC476A /* Pods-ShareExtension.xcconfig */,
-				7CE955994F0B4EE1B86609C4 /* Pods-APICommunicator.xcconfig */,
+				5E9FC865F5F24373B1238B89 /* Pods-APICommunicator.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,8 +254,8 @@
 				DD59714A1940DFFA005C4BED /* SendToInstapaper.app */,
 				DD59715C1940DFFB005C4BED /* SendToInstapaperTests.xctest */,
 				DD635C7619432EC200283B60 /* com.oguzdev.SendToInstapaper.ShareExtension.appex */,
-				DDD9978519435D860017FF7B /* APICommunicator.framework */,
-				DDD9978F19435D860017FF7B /* APICommunicatorTests.xctest */,
+				DD8DE85B194515FF00D8BFAC /* APICommunicator.framework */,
+				DD8DE8651945160000D8BFAC /* APICommunicatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +263,7 @@
 		DD59714C1940DFFA005C4BED /* SendToInstapaper */ = {
 			isa = PBXGroup;
 			children = (
+				DD8DE84E1944DD5700D8BFAC /* SendToInstapaper.entitlements */,
 				DD59714F1940DFFB005C4BED /* AppDelegate.swift */,
 				DD5971511940DFFB005C4BED /* ViewController.swift */,
 				DD59716C1940E709005C4BED /* LoginViewController.swift */,
@@ -246,6 +303,7 @@
 		DD635C7719432EC200283B60 /* ShareExtension */ = {
 			isa = PBXGroup;
 			children = (
+				DD8DE84D1944D6CF00D8BFAC /* com.oguzdev.SendToInstapaper.ShareExtension.entitlements */,
 				DD635C7C19432EC200283B60 /* MainInterface.storyboard */,
 				DDD9977A19432FF70017FF7B /* SendingViewController.swift */,
 				DD635C7819432EC200283B60 /* Supporting Files */,
@@ -262,38 +320,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DDD9978619435D860017FF7B /* APICommunicator */ = {
+		DD8DE85C194515FF00D8BFAC /* APICommunicator */ = {
 			isa = PBXGroup;
 			children = (
-				DDD9978919435D860017FF7B /* APICommunicator.h */,
-				DDD997A519435DAF0017FF7B /* APICommunicator.swift */,
-				DDD9978719435D860017FF7B /* Supporting Files */,
+				DD8DE85F194515FF00D8BFAC /* APICommunicator.h */,
+				DD8DE8841945161900D8BFAC /* APICommunicator.swift */,
+				DD8DE85D194515FF00D8BFAC /* Supporting Files */,
 			);
 			path = APICommunicator;
 			sourceTree = "<group>";
 		};
-		DDD9978719435D860017FF7B /* Supporting Files */ = {
+		DD8DE85D194515FF00D8BFAC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DDE497BF19437E1900B81557 /* APICommunicator-Bridging-Header.h */,
-				DDD9978819435D860017FF7B /* Info.plist */,
+				DD8DE8861945183800D8BFAC /* APICommunicator-Bridging-Header.h */,
+				DD8DE85E194515FF00D8BFAC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DDD9979319435D860017FF7B /* APICommunicatorTests */ = {
+		DD8DE8691945160000D8BFAC /* APICommunicatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				DDD9979619435D860017FF7B /* APICommunicatorTests.swift */,
-				DDD9979419435D860017FF7B /* Supporting Files */,
+				DD8DE86C1945160000D8BFAC /* APICommunicatorTests.swift */,
+				DD8DE86A1945160000D8BFAC /* Supporting Files */,
 			);
 			path = APICommunicatorTests;
 			sourceTree = "<group>";
 		};
-		DDD9979419435D860017FF7B /* Supporting Files */ = {
+		DD8DE86A1945160000D8BFAC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DDD9979519435D860017FF7B /* Info.plist */,
+				DD8DE86B1945160000D8BFAC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -301,6 +359,7 @@
 		F02458D5079842F7B54EAAAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD8DE8531944FE6600D8BFAC /* MapKit.framework */,
 				51129C57BA6240C18D302F00 /* libPods-SendToInstapaper.a */,
 				4A4B82885D1749549ED61B9A /* libPods-ShareExtension.a */,
 				74EC041867E6410CA724BF36 /* libPods-APICommunicator.a */,
@@ -311,11 +370,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DDD9978219435D860017FF7B /* Headers */ = {
+		DD8DE858194515FF00D8BFAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD9978A19435D860017FF7B /* APICommunicator.h in Headers */,
+				DD8DE860194515FF00D8BFAC /* APICommunicator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +398,8 @@
 			dependencies = (
 				DD635C7F19432EC200283B60 /* PBXTargetDependency */,
 				DD635C8219432EC200283B60 /* PBXTargetDependency */,
-				DDD9979919435D860017FF7B /* PBXTargetDependency */,
-				DDD9979D19435D860017FF7B /* PBXTargetDependency */,
+				DD8DE86F1945160000D8BFAC /* PBXTargetDependency */,
+				DD8DE8731945160000D8BFAC /* PBXTargetDependency */,
 			);
 			name = SendToInstapaper;
 			productName = SendToInstapaper;
@@ -359,6 +418,8 @@
 			);
 			dependencies = (
 				DD59715E1940DFFB005C4BED /* PBXTargetDependency */,
+				DD8DE8501944F8BD00D8BFAC /* PBXTargetDependency */,
+				DD8DE8521944F8BD00D8BFAC /* PBXTargetDependency */,
 			);
 			name = SendToInstapaperTests;
 			productName = SendToInstapaperTests;
@@ -384,16 +445,16 @@
 			productReference = DD635C7619432EC200283B60 /* com.oguzdev.SendToInstapaper.ShareExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		DDD9978419435D860017FF7B /* APICommunicator */ = {
+		DD8DE85A194515FF00D8BFAC /* APICommunicator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDD9979E19435D860017FF7B /* Build configuration list for PBXNativeTarget "APICommunicator" */;
+			buildConfigurationList = DD8DE8741945160000D8BFAC /* Build configuration list for PBXNativeTarget "APICommunicator" */;
 			buildPhases = (
-				B79135EA362749E78615AD3A /* Check Pods Manifest.lock */,
-				DDD9978019435D860017FF7B /* Sources */,
-				DDD9978119435D860017FF7B /* Frameworks */,
-				DDD9978219435D860017FF7B /* Headers */,
-				DDD9978319435D860017FF7B /* Resources */,
-				98F7D933937A4CAD90AE8A17 /* Copy Pods Resources */,
+				5D1F876D2D2940B4B674D78A /* Check Pods Manifest.lock */,
+				DD8DE856194515FF00D8BFAC /* Sources */,
+				DD8DE857194515FF00D8BFAC /* Frameworks */,
+				DD8DE858194515FF00D8BFAC /* Headers */,
+				DD8DE859194515FF00D8BFAC /* Resources */,
+				7916B11745074D15A0EC6CBD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,25 +462,30 @@
 			);
 			name = APICommunicator;
 			productName = APICommunicator;
-			productReference = DDD9978519435D860017FF7B /* APICommunicator.framework */;
+			productReference = DD8DE85B194515FF00D8BFAC /* APICommunicator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DDD9978E19435D860017FF7B /* APICommunicatorTests */ = {
+		DD8DE8641945160000D8BFAC /* APICommunicatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDD997A219435D860017FF7B /* Build configuration list for PBXNativeTarget "APICommunicatorTests" */;
+			buildConfigurationList = DD8DE8771945160000D8BFAC /* Build configuration list for PBXNativeTarget "APICommunicatorTests" */;
 			buildPhases = (
-				DDD9978B19435D860017FF7B /* Sources */,
-				DDD9978C19435D860017FF7B /* Frameworks */,
-				DDD9978D19435D860017FF7B /* Resources */,
+				DD8DE8611945160000D8BFAC /* Sources */,
+				DD8DE8621945160000D8BFAC /* Frameworks */,
+				DD8DE8631945160000D8BFAC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DDD9979219435D860017FF7B /* PBXTargetDependency */,
+				DD8DE8681945160000D8BFAC /* PBXTargetDependency */,
+				DD8DE87B1945160100D8BFAC /* PBXTargetDependency */,
+				DD8DE87D1945160100D8BFAC /* PBXTargetDependency */,
+				DD8DE87F1945160200D8BFAC /* PBXTargetDependency */,
+				DD8DE8811945160200D8BFAC /* PBXTargetDependency */,
+				DD8DE8831945160400D8BFAC /* PBXTargetDependency */,
 			);
 			name = APICommunicatorTests;
 			productName = APICommunicatorTests;
-			productReference = DDD9978F19435D860017FF7B /* APICommunicatorTests.xctest */;
+			productReference = DD8DE8651945160000D8BFAC /* APICommunicatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -433,6 +499,12 @@
 				TargetAttributes = {
 					DD5971491940DFFA005C4BED = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = X7N27TJG34;
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					DD59715B1940DFFB005C4BED = {
 						CreatedOnToolsVersion = 6.0;
@@ -440,13 +512,20 @@
 					};
 					DD635C7519432EC200283B60 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = X7N27TJG34;
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
 					};
-					DDD9978419435D860017FF7B = {
+					DD8DE85A194515FF00D8BFAC = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = X7N27TJG34;
 					};
-					DDD9978E19435D860017FF7B = {
+					DD8DE8641945160000D8BFAC = {
 						CreatedOnToolsVersion = 6.0;
-						TestTargetID = DDD9978419435D860017FF7B;
+						TestTargetID = DD8DE85A194515FF00D8BFAC;
 					};
 				};
 			};
@@ -466,8 +545,8 @@
 				DD5971491940DFFA005C4BED /* SendToInstapaper */,
 				DD59715B1940DFFB005C4BED /* SendToInstapaperTests */,
 				DD635C7519432EC200283B60 /* ShareExtension */,
-				DDD9978419435D860017FF7B /* APICommunicator */,
-				DDD9978E19435D860017FF7B /* APICommunicatorTests */,
+				DD8DE85A194515FF00D8BFAC /* APICommunicator */,
+				DD8DE8641945160000D8BFAC /* APICommunicatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -497,14 +576,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDD9978319435D860017FF7B /* Resources */ = {
+		DD8DE859194515FF00D8BFAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDD9978D19435D860017FF7B /* Resources */ = {
+		DD8DE8631945160000D8BFAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -514,6 +593,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5D1F876D2D2940B4B674D78A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		67E72AADBFDC4B40970D3A3C /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +621,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-ShareExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7916B11745074D15A0EC6CBD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-APICommunicator-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		85ECE8D8D2F54AB2A2617033 /* Check Pods Manifest.lock */ = {
@@ -559,37 +668,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-SendToInstapaper-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98F7D933937A4CAD90AE8A17 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-APICommunicator-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B2B79F5C482C448EA9BCC870 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B79135EA362749E78615AD3A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -633,19 +712,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDD9978019435D860017FF7B /* Sources */ = {
+		DD8DE856194515FF00D8BFAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD997A619435DAF0017FF7B /* APICommunicator.swift in Sources */,
+				DD8DE8851945161900D8BFAC /* APICommunicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDD9978B19435D860017FF7B /* Sources */ = {
+		DD8DE8611945160000D8BFAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD9979719435D860017FF7B /* APICommunicatorTests.swift in Sources */,
+				DD8DE86D1945160000D8BFAC /* APICommunicatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,20 +746,55 @@
 			target = DD635C7519432EC200283B60 /* ShareExtension */;
 			targetProxy = DD635C8119432EC200283B60 /* PBXContainerItemProxy */;
 		};
-		DDD9979219435D860017FF7B /* PBXTargetDependency */ = {
+		DD8DE8501944F8BD00D8BFAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDD9978419435D860017FF7B /* APICommunicator */;
-			targetProxy = DDD9979119435D860017FF7B /* PBXContainerItemProxy */;
+			target = DD5971491940DFFA005C4BED /* SendToInstapaper */;
+			targetProxy = DD8DE84F1944F8BD00D8BFAC /* PBXContainerItemProxy */;
 		};
-		DDD9979919435D860017FF7B /* PBXTargetDependency */ = {
+		DD8DE8521944F8BD00D8BFAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDD9978419435D860017FF7B /* APICommunicator */;
-			targetProxy = DDD9979819435D860017FF7B /* PBXContainerItemProxy */;
+			target = DD5971491940DFFA005C4BED /* SendToInstapaper */;
+			targetProxy = DD8DE8511944F8BD00D8BFAC /* PBXContainerItemProxy */;
 		};
-		DDD9979D19435D860017FF7B /* PBXTargetDependency */ = {
+		DD8DE8681945160000D8BFAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDD9978419435D860017FF7B /* APICommunicator */;
-			targetProxy = DDD9979C19435D860017FF7B /* PBXContainerItemProxy */;
+			target = DD8DE85A194515FF00D8BFAC /* APICommunicator */;
+			targetProxy = DD8DE8671945160000D8BFAC /* PBXContainerItemProxy */;
+		};
+		DD8DE86F1945160000D8BFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD8DE85A194515FF00D8BFAC /* APICommunicator */;
+			targetProxy = DD8DE86E1945160000D8BFAC /* PBXContainerItemProxy */;
+		};
+		DD8DE8731945160000D8BFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD8DE85A194515FF00D8BFAC /* APICommunicator */;
+			targetProxy = DD8DE8721945160000D8BFAC /* PBXContainerItemProxy */;
+		};
+		DD8DE87B1945160100D8BFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD8DE85A194515FF00D8BFAC /* APICommunicator */;
+			targetProxy = DD8DE87A1945160100D8BFAC /* PBXContainerItemProxy */;
+		};
+		DD8DE87D1945160100D8BFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD8DE85A194515FF00D8BFAC /* APICommunicator */;
+			targetProxy = DD8DE87C1945160100D8BFAC /* PBXContainerItemProxy */;
+		};
+		DD8DE87F1945160200D8BFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD8DE85A194515FF00D8BFAC /* APICommunicator */;
+			targetProxy = DD8DE87E1945160200D8BFAC /* PBXContainerItemProxy */;
+		};
+		DD8DE8811945160200D8BFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD8DE85A194515FF00D8BFAC /* APICommunicator */;
+			targetProxy = DD8DE8801945160200D8BFAC /* PBXContainerItemProxy */;
+		};
+		DD8DE8831945160400D8BFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD8DE85A194515FF00D8BFAC /* APICommunicator */;
+			targetProxy = DD8DE8821945160400D8BFAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -781,9 +895,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SendToInstapaper/SendToInstapaper.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SendToInstapaper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SendToInstapaper/SendToInstapaper-Bridging-Header.h";
 			};
 			name = Debug;
@@ -794,9 +912,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SendToInstapaper/SendToInstapaper.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SendToInstapaper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SendToInstapaper/SendToInstapaper-Bridging-Header.h";
 			};
 			name = Release;
@@ -841,6 +963,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 720C0B14A0E1473BBDAC476A /* Pods-ShareExtension.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/com.oguzdev.SendToInstapaper.ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -849,6 +974,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "com.oguzdev.SendToInstapaper.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ShareExtension/ShareExtension-Bridging-Header.h";
 			};
@@ -858,20 +984,26 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 720C0B14A0E1473BBDAC476A /* Pods-ShareExtension.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/com.oguzdev.SendToInstapaper.ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "com.oguzdev.SendToInstapaper.$(TARGET_NAME:rfc1034identifier)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ShareExtension/ShareExtension-Bridging-Header.h";
 			};
 			name = Release;
 		};
-		DDD9979F19435D860017FF7B /* Debug */ = {
+		DD8DE8751945160000D8BFAC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CE955994F0B4EE1B86609C4 /* Pods-APICommunicator.xcconfig */;
+			baseConfigurationReference = 5E9FC865F5F24373B1238B89 /* Pods-APICommunicator.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -895,11 +1027,13 @@
 			};
 			name = Debug;
 		};
-		DDD997A019435D860017FF7B /* Release */ = {
+		DD8DE8761945160000D8BFAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CE955994F0B4EE1B86609C4 /* Pods-APICommunicator.xcconfig */;
+			baseConfigurationReference = 5E9FC865F5F24373B1238B89 /* Pods-APICommunicator.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -918,7 +1052,7 @@
 			};
 			name = Release;
 		};
-		DDD997A319435D860017FF7B /* Debug */ = {
+		DD8DE8781945160000D8BFAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -936,7 +1070,7 @@
 			};
 			name = Debug;
 		};
-		DDD997A419435D860017FF7B /* Release */ = {
+		DD8DE8791945160000D8BFAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -989,20 +1123,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDD9979E19435D860017FF7B /* Build configuration list for PBXNativeTarget "APICommunicator" */ = {
+		DD8DE8741945160000D8BFAC /* Build configuration list for PBXNativeTarget "APICommunicator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDD9979F19435D860017FF7B /* Debug */,
-				DDD997A019435D860017FF7B /* Release */,
+				DD8DE8751945160000D8BFAC /* Debug */,
+				DD8DE8761945160000D8BFAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDD997A219435D860017FF7B /* Build configuration list for PBXNativeTarget "APICommunicatorTests" */ = {
+		DD8DE8771945160000D8BFAC /* Build configuration list for PBXNativeTarget "APICommunicatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDD997A319435D860017FF7B /* Debug */,
-				DDD997A419435D860017FF7B /* Release */,
+				DD8DE8781945160000D8BFAC /* Debug */,
+				DD8DE8791945160000D8BFAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

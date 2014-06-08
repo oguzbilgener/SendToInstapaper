@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
 	@IBOutlet var usernameField : UITextField
 	@IBOutlet var passwordField : UITextField
 	
+	var hud:MBProgressHUD?
 	var communicator: APICommunicator
 	
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -60,27 +61,48 @@ class LoginViewController: UIViewController {
 			NSLog("empty username or password")
 		}
 		else {
-			var hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+			hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
 			func successfulLogin() {
 				NSLog("successful login")
-				hud.hide(true)
-				hud.mode = MBProgressHUDModeText
-				hud.labelText = "Success!"
-				hud.show(true)
+				hud!.hide(true)
+				hud = MBProgressHUD.showHUDAddedTo(self.view, animated: false)
+				hud!.mode = MBProgressHUDModeText
+				hud!.labelText = "Success!"
 
 				// done for now.
-				self.navigationController.popViewControllerAnimated(true)
+				self.hideHUDLater(action: {
+						self.navigationController.popViewControllerAnimated(true)
+						return
+					}, seconds: 1)
 			}
 			
 			func failedLogin() {
 				NSLog("failed login")
-				hud.hide(true)
-				hud.mode = MBProgressHUDModeText
-				hud.labelText = "Invalid login"
-				hud.show(true)
+				hud!.hide(true)
+				hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+				hud!.mode = MBProgressHUDModeText
+				hud!.labelText = "Invalid login"
+				
+				self.hideHUDLater(action: nil, seconds: 2)
 			}
 			
 			communicator.login(success: successfulLogin, failure: failedLogin)
+		}
+	}
+	
+	func hideHUDLater(#action: ((Void)->Void)?, seconds:Int?) {
+		var secs:Int
+		if(seconds == nil) {
+			secs = 2
+		}
+		else {
+			secs = seconds!
+		}
+		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(secs)*Int64(NSEC_PER_SEC)), dispatch_get_main_queue()) {
+			self.hud!.hide(true)
+			if(action != nil) {
+				action!()
+			}
 		}
 	}
     

@@ -11,41 +11,38 @@ import APICommunicator
 
 class SendingViewController: UIViewController {
 
-	var loggedIn:Bool
 	var hud:MBProgressHUD?
-	var communicator:APICommunicator
+	var communicator:APICommunicator?
 	
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-		loggedIn = false
-		communicator = APICommunicator()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 	
 	init(coder aDecoder: NSCoder!) {
-		loggedIn = false
-		communicator = APICommunicator()
 		super.init(coder: aDecoder)
 	}
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
 		// transparent bg color
 		self.view.backgroundColor = UIColor.clearColor()
+		
+		communicator = APICommunicator()
 		
 		// init the loading HUD
 		hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
 		
-		if(communicator.loggedIn) {
+		NSLog(String(communicator!.loggedIn)+" "+communicator!.username+"&"+communicator!.password)
+		
+		if (communicator!.loggedIn) {
 			hud!.labelText = "Sending"
 			hud!.mode = MBProgressHUDModeIndeterminate
-			communicator.save(url: "http://server2.oguzdev.com/asd", success: successfulSave, failure: failedSave)
+			communicator!.save(url: "http://server2.oguzdev.com/asd", success: successfulSave, failure: failedSave)
 		}
 		else {
 			hud!.mode = MBProgressHUDModeText
-			hud!.labelText = "Invalid login"
+			hud!.labelText = "Please log in first"
 			hud!.show(true)
-			
 			// display the message for a while, then hide it and cancel the extension
 			hideHUDLater(action: cancelShare, seconds: nil)
 
@@ -59,9 +56,9 @@ class SendingViewController: UIViewController {
 	
 	func successfulSave() {
 		hud!.hide(false)
+		hud = MBProgressHUD.showHUDAddedTo(self.view, animated: false)
 		hud!.mode = MBProgressHUDModeText
 		hud!.labelText = "Success"
-		hud!.show(true)
 		
 		
 		// So long, and thaks for all the fish
@@ -70,10 +67,9 @@ class SendingViewController: UIViewController {
 	
 	func failedSave() {
 		hud!.hide(false)
+		hud = MBProgressHUD.showHUDAddedTo(self.view, animated: false)
 		hud!.mode = MBProgressHUDModeText
 		hud!.labelText = "Error"
-		hud!.show(true)
-		
 		
 		// Oops
 		hideHUDLater(action: cancelShare, seconds: 1)
@@ -87,12 +83,16 @@ class SendingViewController: UIViewController {
 		else {
 			secs = seconds!
 		}
-		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(seconds!)*Int64(NSEC_PER_SEC)), dispatch_get_main_queue()) {
+		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(secs)*Int64(NSEC_PER_SEC)), dispatch_get_main_queue()) {
 			self.hud!.hide(true)
 			if(action != nil) {
 				action!()
 			}
 		}
+	}
+	
+	func finalizeShare() {
+//		self.extensionContext.
 	}
 	
 	func cancelShare() {

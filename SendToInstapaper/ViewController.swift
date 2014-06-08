@@ -7,30 +7,21 @@
 //
 
 import UIKit
+import APICommunicator
 
 class ViewController: UIViewController {
 	
 	@IBOutlet var loginBarButton : UIBarButtonItem
 	
-	var loggedIn:Bool
-	
+	var communicator: APICommunicator?
 	
 	init(coder aDecoder: NSCoder!) {
-		loggedIn = false
 		super.init(coder: aDecoder)
 	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		var defaults = NSUserDefaults.standardUserDefaults()
-		if(defaults.objectForKey("username") != nil && defaults.objectForKey("password") != nil) {
-			loggedIn = true
-		}
-		
-		if(loggedIn) {
-			loginBarButton.title = "Log out"
-		}
 //		let accentColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0)
 //		var barAttributes:NSDictionary? = self.navigationController.navigationBar.titleTextAttributes
 //		
@@ -49,16 +40,30 @@ class ViewController: UIViewController {
 	}
 
 	override func viewDidAppear(animated: Bool) {
-		NSLog("viewDidAppear")
+		// Update UI and communicator every time the VC appears
+		communicator = APICommunicator()
+		
+		if(communicator!.loggedIn) {
+			loginBarButton.title = "Log out"
+		}
 	}
 
 	override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
 		// Get the new view controller using [segue destinationViewController].
 		// Pass the selected object to the new view controller.
-		if(segue!.identifier == "ShowLoginSegue" && loggedIn) {
-			// log out action
+	}
+	
+	override func shouldPerformSegueWithIdentifier(identifier: String!, sender: AnyObject!) -> Bool {
+		// If this is a show LoginViewController segue and the user is already logged in, log out instead
+		// because the same button is used for log in and log out actions.
+		// Also do not show the controller for this time.
+		if(identifier! == "ShowLoginSegue" && communicator!.loggedIn) {
 			NSLog("do logout");
+			loginBarButton.title = "Log in"
+			communicator!.logout()
+			return false
 		}
+		return true
 	}
 	
 
