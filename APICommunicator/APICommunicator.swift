@@ -21,7 +21,7 @@ class APICommunicator {
 	let kUsername = "username"
 	let kPassword = "password"
 	let kUrl = "url"
-	let kDefaultsPackage = "com.oguzdev.SendToInstapaper.shared"
+	let kDefaultsPackage = "group.com.oguzdev.SendToInstapaper"
 	
 	init() {
 		var defaults = NSUserDefaults(suiteName: kDefaultsPackage)
@@ -73,7 +73,7 @@ class APICommunicator {
 		manager.responseSerializer = AFHTTPResponseSerializer()
 		manager.responseSerializer.acceptableContentTypes = NSSet(array: ["text/plain"]);
 		
-		manager.POST(loginURLString, parameters: params,
+		manager.POST(saveURLString, parameters: params,
 			success: {
 				(operation: AFHTTPRequestOperation!, responseObject: AnyObject!)->(Void) in
 				success()

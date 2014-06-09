@@ -26,6 +26,8 @@
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
+			<key>NSExtensionActivationSupportsImageWithMaxCount</key>
+			<integer>0</integer>
 			<key>NSExtensionActivationRule</key>
 			<string>TRUEPREDICATE</string>
 			<key>NSExtensionPointName</key>

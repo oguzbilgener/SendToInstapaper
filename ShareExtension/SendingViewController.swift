@@ -32,20 +32,41 @@ class SendingViewController: UIViewController {
 		// init the loading HUD
 		hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
 		
-		NSLog(String(communicator!.loggedIn)+" "+communicator!.username+"&"+communicator!.password)
-		
-		if (communicator!.loggedIn) {
-			hud!.labelText = "Sending"
-			hud!.mode = MBProgressHUDModeIndeterminate
-			communicator!.save(url: "http://server2.oguzdev.com/asd", success: successfulSave, failure: failedSave)
+		// Try to get input items
+		var extensionItems = self.extensionContext.inputItems
+		if(extensionItems.count > 0) {
+			if (communicator!.loggedIn) {
+				// get the first attachment
+				var item = extensionItems[0] as NSExtensionItem
+				var attachments = item.attachments
+				
+				// gotta love AnyObject
+				if let urlProvider = attachments[0] as? NSItemProvider {
+					// The attachment has to be a URL. We cannot accept it otherwise.
+					urlProvider.loadItemForTypeIdentifier("public.url", options: nil) {
+						(decoder: NSSecureCoding!, error: NSError!) -> Void in
+						if let url = decoder as? NSURL {
+							// we found our URL, start sending!
+							self.hud!.labelText = "Sending"
+							self.hud!.mode = MBProgressHUDModeIndeterminate
+							self.communicator!.save(url: url.absoluteString, success: self.successfulSave, failure: self.failedSave)
+						}
+						else {
+							self.showTextError("Please select a URL")
+						}
+					}
+				}
+				else {
+					self.cancelShare()
+				}
+				
+			}
+			else {
+				self.showTextError("Please log in first")
+			}
 		}
 		else {
-			hud!.mode = MBProgressHUDModeText
-			hud!.labelText = "Please log in first"
-			hud!.show(true)
-			// display the message for a while, then hide it and cancel the extension
-			hideHUDLater(action: cancelShare, seconds: nil)
-
+			self.showTextError("Please select a URL")
 		}
     }
 
@@ -62,7 +83,7 @@ class SendingViewController: UIViewController {
 		
 		
 		// So long, and thaks for all the fish
-		hideHUDLater(action: cancelShare, seconds: 1)
+		hideHUDLater(action: finalizeShare, seconds: 1)
 	}
 	
 	func failedSave() {
@@ -73,6 +94,14 @@ class SendingViewController: UIViewController {
 		
 		// Oops
 		hideHUDLater(action: cancelShare, seconds: 1)
+	}
+	
+	func showTextError(text: String) {
+		hud!.mode = MBProgressHUDModeText
+		hud!.labelText = text
+		hud!.show(true)
+		// display the message for a while, then hide it and cancel the extension
+		hideHUDLater(action: cancelShare, seconds: nil)
 	}
 	
 	func hideHUDLater(#action: ((Void)->Void)?, seconds:Int?) {
@@ -92,7 +121,10 @@ class SendingViewController: UIViewController {
 	}
 	
 	func finalizeShare() {
-//		self.extensionContext.
+		self.extensionContext.completeRequestReturningItems(Array<NSExtensionItem>()) {
+			(expired: Bool) -> Void in
+			NSLog("done")
+		}
 	}
 	
 	func cancelShare() {
