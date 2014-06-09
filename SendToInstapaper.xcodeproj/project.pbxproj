@@ -18,6 +18,8 @@
 		DD59716D1940E709005C4BED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD59716C1940E709005C4BED /* LoginViewController.swift */; };
 		DD635C7D19432EC200283B60 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD635C7C19432EC200283B60 /* MainInterface.storyboard */; };
 		DD635C8019432EC200283B60 /* com.oguzdev.SendToInstapaper.ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DD635C7619432EC200283B60 /* com.oguzdev.SendToInstapaper.ShareExtension.appex */; };
+		DD7F75D0194630B000867DEE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DD7F75CF194630B000867DEE /* README.md */; };
+		DD7F75D2194631F700867DEE /* LICENCE.md in Sources */ = {isa = PBXBuildFile; fileRef = DD7F75D1194631F700867DEE /* LICENCE.md */; };
 		DD8DE8541944FE6600D8BFAC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DE8531944FE6600D8BFAC /* MapKit.framework */; };
 		DD8DE8551944FE6800D8BFAC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8DE8531944FE6600D8BFAC /* MapKit.framework */; };
 		DD8DE860194515FF00D8BFAC /* APICommunicator.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8DE85F194515FF00D8BFAC /* APICommunicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -169,6 +171,8 @@
 		DD635C7619432EC200283B60 /* com.oguzdev.SendToInstapaper.ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.oguzdev.SendToInstapaper.ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD635C7919432EC200283B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD635C7C19432EC200283B60 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		DD7F75CF194630B000867DEE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DD7F75D1194631F700867DEE /* LICENCE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENCE.md; sourceTree = "<group>"; };
 		DD8DE84D1944D6CF00D8BFAC /* com.oguzdev.SendToInstapaper.ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = com.oguzdev.SendToInstapaper.ShareExtension.entitlements; sourceTree = "<group>"; };
 		DD8DE84E1944DD5700D8BFAC /* SendToInstapaper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SendToInstapaper.entitlements; sourceTree = "<group>"; };
 		DD8DE8531944FE6600D8BFAC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -235,6 +239,8 @@
 		DD5971411940DFFA005C4BED = {
 			isa = PBXGroup;
 			children = (
+				DD7F75D1194631F700867DEE /* LICENCE.md */,
+				DD7F75CF194630B000867DEE /* README.md */,
 				DD59714C1940DFFA005C4BED /* SendToInstapaper */,
 				DD59715F1940DFFB005C4BED /* SendToInstapaperTests */,
 				DD635C7719432EC200283B60 /* ShareExtension */,
@@ -690,8 +696,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7F75D2194631F700867DEE /* LICENCE.md in Sources */,
 				DD59716D1940E709005C4BED /* LoginViewController.swift in Sources */,
 				DD5971521940DFFB005C4BED /* ViewController.swift in Sources */,
+				DD7F75D0194630B000867DEE /* README.md in Sources */,
 				DD5971501940DFFB005C4BED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
