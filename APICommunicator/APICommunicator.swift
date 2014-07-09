@@ -26,9 +26,11 @@ class APICommunicator {
 	init() {
 		var defaults = NSUserDefaults(suiteName: kDefaultsPackage)
 		manager = AFHTTPRequestOperationManager()
-		if(defaults.objectForKey(kUsername) != nil && defaults.objectForKey(kPassword) != nil) {
-			username = defaults.objectForKey(kUsername) as String
-			password = defaults.objectForKey(kPassword) as String
+		let uObject = defaults.objectForKey(kUsername) as? String
+		let pObject = defaults.objectForKey(kPassword) as? String
+		if(uObject && pObject) {
+			username = uObject as String
+			password = pObject as String
 			loggedIn = true
 		}
 		else {

@@ -43,11 +43,6 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 	
-	func loginCancelled(sender : AnyObject) {
-		// just dismiss the modal
-		self.dismissModalViewControllerAnimated(true)
-	}
-	
 	@IBAction func loginSubmitted(sender : AnyObject) {
 		var username = String(usernameField.text)
 		var password = String(passwordField.text)
@@ -100,7 +95,7 @@ class LoginViewController: UIViewController {
 		}
 		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(secs)*Int64(NSEC_PER_SEC)), dispatch_get_main_queue()) {
 			self.hud!.hide(true)
-			if(action != nil) {
+			if(action) {
 				action!()
 			}
 		}

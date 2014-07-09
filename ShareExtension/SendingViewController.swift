@@ -114,7 +114,7 @@ class SendingViewController: UIViewController {
 		}
 		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(secs)*Int64(NSEC_PER_SEC)), dispatch_get_main_queue()) {
 			self.hud!.hide(true)
-			if(action != nil) {
+			if(action) {
 				action!()
 			}
 		}
